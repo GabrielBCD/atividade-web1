@@ -1,0 +1,232 @@
+$color1: #222256;
+$color2: #22a8f0;
+$color3: #ffae00;
+$color4: #f1f1f1;
+$color5: #afadaa;
+$container-local: 1100px;
+$media-mobile: 800px;
+
+
+/*Containers do bootstrap*/
+.container-xxl, .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Containers locais*/
+%container-local {
+    max-width: $container-local !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Tags */
+header {
+    height: 513px;
+    background-color: $color1;
+
+    @media (max-width: $container-local) {
+        height: auto;
+    }
+}
+
+/*Cabeçalho e NavBar*/
+.navbar {
+    background-color: $color1 !important;
+    padding-top: 60px;
+    padding-bottom: 0;
+
+    @media (max-width: $container-local) {
+        padding-top: 0;
+    }
+}
+
+.container-nav {
+    @extend %container-local;
+    background-color: $color2 !important;
+    padding: 30px 0;
+    border-radius: 10px;
+
+    @media (max-width: $container-local) {
+        border-radius: 0;
+    }
+}
+
+.navbar-nav {
+    margin-right: 30px;
+    @media (max-width: $container-local) {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}
+
+.title {
+    margin: 0 0 0 30px;
+    color: white;
+    font-size: 2em;
+
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-link, .nav-link:visited {
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: white;
+    transition: none;
+}
+
+.nav-link:hover {
+    color: $color3;
+    background-color: white;
+}
+
+.navbar-toggler {
+    margin-right: 30px;
+}
+
+.collapse {
+    flex-grow: 0;
+}
+
+.container-img {
+    @extend %container-local;
+    background-image: url("images/banner-img.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 371px;
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+
+    .header-img {
+        display: none;
+    }
+
+    @media (max-width: $container-local) {
+        height: auto;
+        padding: 0 !important;
+        flex-direction: column;
+        justify-content: center;
+        background-image: none;
+        background-color: $color1 !important;
+
+        .header-img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .header-div-itens {
+        margin-left: 10px;
+        @media (max-width: $container-local) {
+            height: auto;
+            padding: 40px 0;
+        }
+
+        .header-div-p {
+            margin: 5px 0;
+            font-size: 1.2em;
+            color: $color2;
+        }
+
+        .header-div-h2 {
+            margin: 5px 0;
+            font-size: 2.2em;
+            color: $color3;
+        }
+
+        @media (max-width: $container-local) {
+            .header-div-p, .header-div-h2 {
+                text-align: center;
+            }
+            .header-div-p {
+                font-size: 1em;
+            }
+            .header-div-h2 {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+.link-button {
+    text-decoration: none;
+
+    .img-button {
+        margin-top: 50px;
+        @media (max-width: $container-local) {
+            margin-top: 10px;
+        }
+    }
+
+    .p-button, .p-button:hover {
+        margin-bottom: 0;
+        color: white;
+        margin-left: 55px;
+        margin-top: -32px;
+    }
+}
+
+/* Section 1 */
+.section-1 {
+    background-color: $color4;
+}
+
+.container-sec1 {
+    @extend %container-local;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    height: 350px;
+
+    .card-about {
+        width: 325px;
+        height: 225px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 0 #0000001f;
+
+        .card-titulo {
+            font-size: 24px;
+            color: $color2;
+        }
+
+        .card-texto {
+            font-size: .8em;
+            color: $color5;
+        }
+
+        .card-about-link{
+            text-decoration: none;
+            font-size: .8em;
+            color: white;
+            background-color: #22a8f0;
+            padding: 8px 10px;
+            border-radius: 8px;
+        }
+
+    }
+
+    @media (max-width: $container-local) {
+        height: auto;
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: nowrap;
+
+        .card-about {
+            margin-bottom: 20px;
+            width: 300px;
+            height: 225px;
+        }
+    }
+
+}
+
