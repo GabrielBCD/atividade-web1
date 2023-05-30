@@ -3,8 +3,7 @@ $color2: #22a8f0;
 $color3: #ffae00;
 $color4: #f1f1f1;
 $color5: #afadaa;
-$container-local: 1100px;
-$media-mobile: 800px;
+$container-local: 1025px;
 
 
 /*Containers do bootstrap*/
@@ -49,13 +48,14 @@ header {
 
     @media (max-width: $container-local) {
         border-radius: 0;
+        padding: 15px 0;
     }
 }
 
 .navbar-nav {
-    margin-right: 30px;
-    @media (max-width: $container-local) {
-        margin-left: 30px;
+    margin: 0 30px;
+
+    @media (max-width: 991px) {
         margin-top: 30px;
     }
 }
@@ -187,34 +187,6 @@ header {
     padding: 50px 0;
     height: 350px;
 
-    .card-about {
-        width: 325px;
-        height: 225px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 1px 0 #0000001f;
-
-        .card-titulo {
-            font-size: 24px;
-            color: $color2;
-        }
-
-        .card-texto {
-            font-size: .8em;
-            color: $color5;
-        }
-
-        .card-about-link{
-            text-decoration: none;
-            font-size: .8em;
-            color: white;
-            background-color: #22a8f0;
-            padding: 8px 10px;
-            border-radius: 8px;
-        }
-
-    }
-
     @media (max-width: $container-local) {
         height: auto;
         display: flex;
@@ -227,6 +199,41 @@ header {
             height: 225px;
         }
     }
-
 }
 
+.card-about {
+    width: 325px;
+    height: 225px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 0 #0000001f;
+}
+
+.card-titulo {
+    font-size: 24px;
+    color: $color2;
+}
+
+.card-texto {
+    font-size: .8em;
+    color: $color5;
+}
+
+.card-about-link {
+    text-decoration: none;
+    font-size: .8em;
+    color: white;
+    background-color: #22a8f0;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.container-sec2 {
+    @extend %container-local;
+}
+
+@media (max-width: 991px) {
+    .div1 {
+        max-width: 300px;
+    }
+}
