@@ -10,6 +10,9 @@ $container-local: 1025px;
 .container-xxl, .container-fluid {
     padding-right: 0 !important;
     padding-left: 0 !important;
+
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
 }
 
 /* Containers locais*/
@@ -230,6 +233,10 @@ header {
 
 .container-sec2 {
     @extend %container-local;
+}
+
+.row{
+    --bs-gutter-x: 0;
 }
 
 @media (max-width: 991px) {
