@@ -221,8 +221,13 @@ header {
   --bs-gutter-x: 0;
 }
 
-.div1 {
-  margin-right: 10px;
+.div1, .div2, .div3, .div4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.div1, .div3 {
+  margin-right: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -238,6 +243,23 @@ header {
     margin-left: auto;
     margin-bottom: 20px;
   }
+}
+.div-balao {
+  display: block;
+  background-image: url("images/testimonilas-bg.gif");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 40px;
+  color: white;
+}
+
+.text-balao {
+  color: white;
+  margin-left: -15px;
+}
+
+.read-more {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
