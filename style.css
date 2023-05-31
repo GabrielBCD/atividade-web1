@@ -9,7 +9,7 @@
 
 /* Containers locais*/
 .container-sec2, .container-sec1, .container-img, .container-nav {
-  max-width: 1025px !important;
+  max-width: 991px !important;
   margin-right: auto;
   margin-left: auto;
 }
@@ -19,7 +19,7 @@ header {
   height: 513px;
   background-color: #222256;
 }
-@media (max-width: 1025px) {
+@media (max-width: 991px) {
   header {
     height: auto;
   }
@@ -31,7 +31,7 @@ header {
   padding-top: 60px;
   padding-bottom: 0;
 }
-@media (max-width: 1025px) {
+@media (max-width: 991px) {
   .navbar {
     padding-top: 0;
   }
@@ -42,7 +42,7 @@ header {
   padding: 30px 0;
   border-radius: 10px;
 }
-@media (max-width: 1025px) {
+@media (max-width: 991px) {
   .container-nav {
     border-radius: 0;
     padding: 15px 0;
@@ -100,7 +100,7 @@ header {
 .container-img .header-img {
   display: none;
 }
-@media (max-width: 1025px) {
+@media (max-width: 991px) {
   .container-img {
     height: auto;
     padding: 0 !important;
@@ -117,7 +117,7 @@ header {
 .container-img .header-div-itens {
   margin-left: 10px;
 }
-@media (max-width: 1025px) {
+@media (max-width: 991px) {
   .container-img .header-div-itens {
     height: auto;
     padding: 40px 0;
@@ -133,7 +133,7 @@ header {
   font-size: 2.2em;
   color: #ffae00;
 }
-@media (max-width: 1025px) {
+@media (max-width: 991px) {
   .container-img .header-div-itens .header-div-p, .container-img .header-div-itens .header-div-h2 {
     text-align: center;
   }
@@ -151,7 +151,7 @@ header {
 .link-button .img-button {
   margin-top: 50px;
 }
-@media (max-width: 1025px) {
+@media (max-width: 991px) {
   .link-button .img-button {
     margin-top: 10px;
   }
@@ -176,7 +176,7 @@ header {
   padding: 50px 0;
   height: 350px;
 }
-@media (max-width: 1025px) {
+@media (max-width: 991px) {
   .cards {
     height: auto;
     display: flex;
@@ -191,7 +191,7 @@ header {
 }
 
 .card-about {
-  width: 325px;
+  width: 315px;
   height: 225px;
   background-color: white;
   border-radius: 8px;
@@ -221,9 +221,22 @@ header {
   --bs-gutter-x: 0;
 }
 
+.div1 {
+  margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .div1, .div2, .div3, .div4 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
 @media (max-width: 991px) {
-  .div1 {
+  .div1, .div2, .div3, .div4 {
     max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
   }
 }
 
