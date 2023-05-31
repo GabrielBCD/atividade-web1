@@ -8,7 +8,7 @@
 }
 
 /* Containers locais*/
-.container-sec2, .container-sec1, .container-img, .container-nav {
+.container-footer, .container-sec2, .container-sec1, .container-img, .container-nav {
   max-width: 991px !important;
   margin-right: auto;
   margin-left: auto;
@@ -230,12 +230,6 @@ header {
   margin-right: 20px;
 }
 
-@media (max-width: 1024px) {
-  .div1, .div2, .div3, .div4 {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-}
 @media (max-width: 991px) {
   .div1, .div2, .div3, .div4 {
     max-width: 300px;
@@ -260,6 +254,15 @@ header {
 
 .read-more {
   margin-left: 10px;
+}
+
+footer {
+  background-color: #222256;
+}
+
+.copy {
+  padding: 40px 0;
+  background-color: #22a8f0;
 }
 
 /*# sourceMappingURL=style.css.map */
