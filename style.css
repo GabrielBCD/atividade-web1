@@ -64,6 +64,10 @@ header {
   font-size: 2em;
 }
 
+.text-dor {
+  color: #f4c422;
+}
+
 .nav-item {
   margin-right: 10px;
 }
@@ -76,7 +80,7 @@ header {
 }
 
 .nav-link:hover {
-  color: #ffae00;
+  color: #f4c422;
   background-color: white;
 }
 
@@ -131,7 +135,7 @@ header {
 .container-img .header-div-itens .header-div-h2 {
   margin: 5px 0;
   font-size: 2.2em;
-  color: #ffae00;
+  color: #f4c422;
 }
 @media (max-width: 991px) {
   .container-img .header-div-itens .header-div-p, .container-img .header-div-itens .header-div-h2 {
@@ -185,6 +189,7 @@ header {
   }
   .cards .card-about {
     margin-bottom: 20px;
+    margin-top: 20px;
     width: 300px;
     height: 225px;
   }
@@ -254,6 +259,7 @@ header {
 
 .read-more {
   margin-left: 10px;
+  color: #22a8f0;
 }
 
 footer {
@@ -273,6 +279,70 @@ footer {
   font-size: 0.9em;
   color: white;
   margin: 0;
+}
+@media (max-width: 991px) {
+  .copy div {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .copy div p {
+    text-align: center;
+    font-size: 0.9em;
+    color: white;
+    margin: 0;
+  }
+}
+
+.footer-titulo {
+  font-size: 1.4em;
+  color: white;
+  margin: 0;
+}
+
+.footer-subtitulo {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.footer-texto {
+  color: #22a8f0;
+  font-size: 0.8em;
+}
+
+.footer-icons img {
+  margin: 0 3px;
+}
+
+.footer-input1 {
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-input2 {
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.footer-input-submit {
+  background-color: #f4c422;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.card-footer {
+  width: 315px;
+  height: 225px;
+  background-color: #222256;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
