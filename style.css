@@ -264,5 +264,15 @@ footer {
   padding: 40px 0;
   background-color: #22a8f0;
 }
+.copy div {
+  max-width: 661px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.copy div p {
+  font-size: 0.9em;
+  color: white;
+  margin: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

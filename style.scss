@@ -273,19 +273,34 @@ header {
     margin-left: -15px;
 }
 
-.read-more{
+.read-more {
     margin-left: 10px;
 }
 
-.container-footer{
+.container-footer {
     @extend %container-local
 }
 
-footer{
+footer {
     background-color: $color1;
 }
 
-.copy{
+.copy {
     padding: 40px 0;
     background-color: $color2;
+
+    div {
+        max-width: 661px;
+        margin-right: auto;
+        margin-left: auto;
+
+        p{
+            font-size: .9em;
+            color: white;
+            margin: 0;
+        }
+
+    }
+
 }
+
